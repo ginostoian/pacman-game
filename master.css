@@ -1,0 +1,120 @@
+html,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    margin-inline: auto;
+    margin-block-start: 5em;
+}
+
+h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(
+    45deg, #09009f, #00ff95 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    margin-block-start: 3.5em;
+    width: 420px;
+    height: 420px;
+    border: 1px solid pink;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+    /* background-color: cornflowerblue; */
+}
+
+.pac-dot {
+    background-color: green;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: cornflowerblue;
+}
+
+.power-pellet {
+    background-color: grey;
+    border-radius: 7.5px;
+}
+
+.pacman {
+    background-color: yellowgreen;
+    border-radius: 7.5px;
+    border: none;
+}
+
+.empty {
+    background-color: none;
+}
+
+.blinky {
+    background-color: red;
+    border: none;
+}
+
+.pinky {
+    background-color: pink;
+    border: none;
+}
+
+.inky {
+    background-color: blue;
+    border: none;
+}
+
+.clyde {
+    background-color: orange;
+    border: none;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+    border: none;
+}
+
+.buttons {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        margin-top: 2rem;
+    }
+    
+    .up-down-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .move-left,
+    .move-right,
+    .move-up,
+    .move-down {
+        font-size: 2rem;
+        padding: .5rem 1rem;
+    }
+}
+
